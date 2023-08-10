@@ -1,3 +1,9 @@
+const express = require('express');
+const pets = require('./data'); // Assuming this is the pets data you provided
+
+// Serve static files from the 'public' folder
+app.use(express.static(__dirname + '/public'));
+
 // import the pets array from data.js
 const pets = require('./data');
 
